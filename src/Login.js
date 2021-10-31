@@ -18,8 +18,19 @@ const Login = () => {
     };
 
     const formSubmit = (e)=>{
-        e.preventDefault();
+        if(data.email=="")
+        {
+            alert("Enter Email");
+        }
+        else if(data.password=="")
+        {
+            alert("Enter Password");
+        }
+        else
+        {
+            e.preventDefault();
         alert(`Logged in Successfully`);
+        }
     }
 
 
